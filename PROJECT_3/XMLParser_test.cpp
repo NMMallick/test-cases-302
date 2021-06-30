@@ -82,6 +82,7 @@ TEST_CASE( "Test all provided HTML files", "[XMLParser]") {
 		}
 		
 		REQUIRE(parser.tokenizeInputString(inputString));
+		REQUIRE(parser.parseTokenizedInput());
 		myfile.close(); 
 
 	}
